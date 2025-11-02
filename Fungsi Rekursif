@@ -1,0 +1,27 @@
+# FAKTORIAL
+# Rumus faktorial:
+# n!=n x (n-1)!
+
+def faktorial(n):
+    if n = 0 or n == 1:
+        return 1
+    else:
+        return n * faktorial(n - 1)
+
+angka = int(input("Masukkan bilangan: ")) 
+print(f"Faktorial dari {angka} adalah {faktorial(angka)}")
+
+
+# DERET FIBONACCI
+
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+n = int(input("Masukkan jumlah suku: "))
+print("Deret Fibonacci:")
+
+for i in range(n):
+    print(fibonacci(i), end=" ")
