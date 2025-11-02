@@ -1,0 +1,47 @@
+# FPB dan KPK
+# Menggunakan algoritma Euclidean:
+
+def fpb(a, b):
+    while b!= 0:
+        a, b = b, a % b
+    return a
+
+def kpk(a, b):
+    return abs(a * b) // fpb(a, b)
+
+x = int(input("Masukkan bilangan pertama: "))
+y = int(input("Masukkan bilangan kedua: "))
+
+print(f"FPB dari {x} dan {y} adalah {fpb(x, y)}")
+print(f"KPK dari {x} dan {y} adalah (kpk(x, y)}")
+
+
+# BILANGAN GANJIL DAN GENAP
+
+def ganjil_genap(n):
+    if n % 2 == 0:
+        return "Genap"
+    else:
+        return "Ganjil"
+
+bil = int(input("Masukkan bilangan: "))
+print(f"{bil} adalah bilangan {ganjil_genap(bil)}")
+
+
+# BILANGAN PRIMA
+
+def is_prima(n):
+    if n <= 1:
+      return False
+    for i in range(2, int(n**0.5) + 1):
+      if n % i == 0:
+        return False
+    return True
+
+angka int(input("Masukkan bilangan: "))
+
+if is_prima(angka):
+    print(angka, "adalah bilangan prima")
+else:
+    print(angka, "bukan bilangan prima")
+
