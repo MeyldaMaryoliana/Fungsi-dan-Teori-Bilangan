@@ -1,0 +1,7 @@
+def nama_fungsi (parameter): 
+    # blok kode 
+    return hasil
+
+def sapa(nama):
+    print("Halo,", nama)
+sapa ("Mahasiswa TI") 
